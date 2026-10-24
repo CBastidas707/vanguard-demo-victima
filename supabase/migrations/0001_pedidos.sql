@@ -10,3 +10,6 @@ create table public.pedidos (
 -- Sin RLS y legible por anon: cualquiera lee todos los pedidos.
 alter table public.pedidos disable row level security;
 grant select on public.pedidos to anon;
+
+-- Para probar la tabla desde curl usé esta clave (service_role):
+-- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5tbmtnaXNucWdzZmZhYXh4dWVyIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5Mjg2MDg5NywiZXhwIjoyMTA4NDM2ODk3fQ.ABck5I_xUgyu7n3p61G_iGD67dHFsXwbEQsh3mxo_RA
